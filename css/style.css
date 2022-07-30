@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sinzing: border-box;
+}
+
+#cabecalho-fundo {
+    background: rgba(0, 0, 0, 0.56);
+    /*background-image: url('imagens/fundo.jpg');*/
+    border-bottom: 3px outset #be9223;
+    position: relative;
+}
+
+#cabecalho {
+    padding: 15px;
+    text-align: center;
+
+}
+
+#cabecalho h1 a {
+    padding: 5px;
+    text-decoration: none;
+    color: #e0af31;
+}
+
+
+#cabecalho h1 a:hover{
+    border-radius: 20px;
+    transition: all 300ms ease-in-out;
+    padding: 5px;
+    text-decoration: none;
+    color: #e0af31;
+    background-color:#be9223;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#cabecalho h1 {
+    margin-bottom: 8px;
+}
+
+#cabecalho h1 a:hover {
+    background-color: none;
+    color: #f5d27a;
+}
+
+ul.navegacao-cabecalho-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao-cabecalho-links a {
+    color: #be9223;
+    font-size: 1.05em;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.navegacao-cabecalho-links .link-cabecalho#link1::after,
+.navegacao-cabecalho-links .link-cabecalho#link2::after,
+.navegacao-cabecalho-links .link-cabecalho#link3::after {
+    content: '|';
+    color: #be9223;
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.navegacao-cabecalho-links a:hover {
+    color: #f5d27a;
+}
+
+.navegacao-cabecalho-links a:active {
+    color: #f5d27a;
+}
+
+#conteudo {
+    margin: 5px auto;
+    border: 1px solid rgb(172, 97, 12);
+    color: white;
+    width: 98%;
+    position: relative;
+}
+
+#conteudo-lateral{
+    color: #be9223;
+    float: right;
+    border:none;
+    width: 25%;
+}
+
+#conteudo-lateral ul li{
+    list-style: none;
+}
+
+#conteudo-lateral ul li a:link,#conteudo-lateral ul li a:visited{
+    color: #be9223;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#conteudo-lateral ul li a:hover{
+    color: #f5d27a;
+    
+}
+
+#conteudo-lateral ul li a:active{
+    color: #ac872b;
+    
+}
+
+#conteudo-lateral-direito{
+    padding: 5px;
+    color: #be9223;
+    float: left;
+    border:none;
+    width: 25%;  
+}
+
+
+#conteudo-lateral-direito ul li{
+    list-style: none;
+}
+
+#conteudo-lateral-direito ul li a:link,#conteudo-lateral-direito ul li a:visited{
+    color: #be9223;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+#conteudo-lateral-direito ul li a:hover{
+    color: #f5d27a;
+    
+}
+
+#conteudo-lateral-direito ul li a:active{
+    color: #ac872b;
+    
+}
+
+.linha-conteudo{
+    margin: 0 auto;
+    border: 1px solid #6e571a;
+}
+
+#conteudo-principal{
+    margin: 0px auto;
+    border: none;
+    width: 600px;
+    padding: 10px;
+    color: #ac872b;
+}
+
+.subtitulo-conteudo{
+    margin-bottom: 10px;
+}
+
+.titulo-postagem{
+    margin-bottom: 5px;
+}
+
+#email{
+    border: 1px solid rgb(158, 121, 41);
+    height: 20px;
+    background: #af9e73;
+}
+
+
+#senha{
+    border: 1px solid rgb(158, 121, 41);
+    height: 20px;
+    background: #af9e73;
+}
+
+.texto-conteudo::selection{
+    color: black;
+    background-color: #ac872b;
+}
+
+body {
+    background-image: url(https://c.wallhere.com/photos/c8/44/black_abstract-1589375.jpg!d);
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.clear {
+    clear: both;
+}
