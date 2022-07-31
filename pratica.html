@@ -30,9 +30,9 @@
     <div id="conteudo">
       <aside id="conteudo-lateral">
         <div>
-          <h2>Lançamentos :</h2>
+          <h2>Novidades :</h2>
           <ul class="navegacao-lateral">
-            <li><a href="">Ultimo Lançamento</a></li>
+            <li><a href="#contratacao">Contratação</a></li>
             <li><a href="">Spotify</a></li>
             <li><a href="">Instagram</a></li>
             <li><a href="">Agenda de Shows</a></li>
@@ -43,12 +43,21 @@
       <aside id="conteudo-lateral-direito">
         <div class="cadastro">
           <h2>Cadastro :</h2>
-          <label for="email">E-mail:</label><br />
-          <input type="text" name="email" id="email" /> <br />
+          <p>
+            <label for="email" class="titulo-cadastro">E-mail:</label><br />
+          </p>
+          <input type="text" name="email" id="email" class="input-cadastro" />
           <br />
-
-          <label for="senha">Senha:</label> <br />
-          <input type="password" name="senha" id="senha" />
+          <br />
+          <p>
+            <label for="senha" class="titulo-cadastro">Senha:</label> <br />
+          </p>
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            class="input-cadastro"
+          />
         </div>
       </aside>
 
@@ -57,24 +66,51 @@
         <br />
         <hr class="linha-conteudo" />
         <br />
-        <h3 class="subtitulo-conteudo">Lançamento Principal</h3>
-        <h4 class="titulo-postagem">IOC - Dois Zero Zero Quatro</h4>
-        <img
-          src="imagens/capa.jpg"
-          width="600px"
-          height="600px"
-          alt="imagem ioc"
-        />
-        <audio controls class="audio">
-          <source src="audios/dois zero zero quatro.wav" type="audio/wav" />
-        </audio>
-        <p class="texto-conteudo">
-          O último lançamento oficial da DaVilla foi do artista IOC, intitulado
-          'Dois Zero Zero Quatro, sendo um single, a faixa foi lançada somente
-          nas plataformas digitais de streaming, não sendo postado no YouTube.
-        </p>
+        <div class="publicacao">
+          <h3 class="subtitulo-conteudo">Lançamento Principal</h3>
+          <h4 class="titulo-postagem">IOC - Dois Zero Zero Quatro</h4>
+          <img
+            src="imagens/capa.jpg"
+            width="600px"
+            height="600px"
+            alt="imagem ioc"
+          />
+          <audio controls class="audio">
+            <source src="audios/dois zero zero quatro.wav" type="audio/wav" />
+          </audio>
+          <p class="texto-conteudo">
+            O último lançamento oficial da DaVilla foi do artista IOC,
+            intitulado 'Dois Zero Zero Quatro, sendo um single, a faixa foi
+            lançada somente nas plataformas digitais de streaming, não sendo
+            postado no YouTube.
+          </p>
+        </div>
+        <br />
+        <hr class="linha-conteudo" />
+        <br />
+        <div class="publicacao2" id="contratacao">
+          <h3 class="subtitulo-conteudo">DaVilla Contrata Novo Artista</h3>
+          <h4 class="titulo-postagem">Sampaio</h4>
+          <img
+            src="imagens/Sampaio.jpeg"
+            width="600px"
+            height="800px"
+            alt="imagem sampaio"
+          />
+          <!--<audio controls class="audio">
+            <source src="audios/dois zero zero quatro.wav" type="audio/wav" />
+          </audio>-->
+          <p class="texto-conteudo">
+            O novo contratado da DaVilla nos últimos meses se intitula Sampaio.
+            Com origem no Drill, o rapper de São Paulo foi selecionado como o
+            segundo artista escalado para contratação oficial na DaVilla, um
+            projeto já divulgado nas mídias sociais mostra o artista em
+            atividade e o apresenta ao público. Veja:
+          </p>
+        </div>
       </section>
       <div class="clear"></div>
     </div>
+    <!--Fim conteudo-->
   </body>
 </html>
