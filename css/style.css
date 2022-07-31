@@ -25,31 +25,30 @@ html{
 }
 
 #cabecalho h1 a {
-    transition: all 300ms ease-in-out;
+    font-size: 1em;
+    transition: font-size 300ms ease-in-out;
     text-decoration: none;
     color: #e0af31;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
+    -webkit-transition: font-size 300ms ease-in-out;
+    -moz-transition: font-size 300ms ease-in-out;
+    -ms-transition: font-size 300ms ease-in-out;
+    -o-transition: font-size 300ms ease-in-out;
+}
+
+#cabecalho h1 a::selection{
+    color: #110c00;
+    background-color: #ac872b;
 }
 
 
+
 #cabecalho h1 a:hover{
+    font-size: 1.2em;
     border-radius: 20px;
-    transition: all 300ms ease-in-out;
     padding: 1px 15px;
     text-decoration: none;
     color: #e0af31;
     text-shadow: 5px 5px 6px orange;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 #cabecalho h1 {
@@ -73,6 +72,11 @@ ul.navegacao-cabecalho-links {
     text-decoration: none;
     padding: 5px 15px;
     font-weight: bold;
+}
+
+.navegacao-cabecalho-links a::selection{
+    color: #110c00;
+    background-color: #be9223;
 }
 
 .navegacao-cabecalho-links li::after{
@@ -117,6 +121,11 @@ ul.navegacao-cabecalho-links {
     display: block;
 }
 
+#conteudo-lateral h2::selection,#conteudo-lateral a::selection {
+color: #110c00;
+background-color: #be9223;
+}
+
 #conteudo-lateral ul li a:link,#conteudo-lateral ul li a:visited{
     color: #be9223;
     text-decoration: none;
@@ -142,6 +151,12 @@ ul.navegacao-cabecalho-links {
     font-weight: bold;
     text-transform: capitalize;
 }
+
+
+#conteudo-lateral-direito .cadastro h2::selection,#conteudo-lateral-direito .cadastro label::selection {
+    color: #110c00;
+    background-color: #be9223;
+    }
 
 
 #conteudo-lateral-direito ul li{
@@ -179,8 +194,16 @@ ul.navegacao-cabecalho-links {
     margin: 0px auto;
     border: none;
     width: 600px;
-    padding: 10px;
+    padding: 0px;
     color: #ac872b;
+}
+
+#conteudo-principal h1::selection,
+#conteudo-principal h2::selection,
+#conteudo-principal h3::selection,
+#conteudo-principal h4::selection{
+    color: #110c00;
+    background-color: #be9223;
 }
 
 .subtitulo-conteudo{
@@ -206,14 +229,58 @@ ul.navegacao-cabecalho-links {
 
 .texto-conteudo{
     text-shadow: 2px 2px 6px rgb(94, 72, 13);
+    padding: 0px;
+    margin: 0px;
 }
-.texto-conteudo::selection{
+.texto-conteudo::selection,.texto-conteudo2::selection{
     color: black;
     background-color: #ac872b;
 }
 
+.texto-conteudo2{
+    text-shadow: 2px 2px 6px rgb(94, 72, 13);
+    padding-bottom: 2px;
+    margin: 0px;
+}
+
 label{
     cursor: pointer;
+}
+
+.rodape{
+    background: linear-gradient(56.78deg, black,rgb(12, 9, 5));
+    font-size: 0.8em;
+    color: #d6b154;
+}
+
+.tabela-rodape{
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.tabela-rodape tr td a:link, .tabela-rodape tr td a:visited{
+    color: #d6b154;
+    text-decoration: none;
+}
+
+.tabela-rodape tr td a:hover{
+    color: #d6b154;
+    text-shadow: 3px 2px 5px white ;
+    text-decoration: none;
+}
+
+.tabela-rodape tr td a:active{
+    color: #110c00;
+    text-shadow: 3px 2px 5px rgb(124, 88, 9) ;
+    text-decoration: none;
+}
+
+.tabela-rodape th::selection, 
+.tabela-rodape td::selection,
+.tabela-rodape a::selection{
+    color: #110c00;
+    background-color: #be9223;
 }
 
 body {
